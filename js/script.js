@@ -21,15 +21,22 @@ $("button").click(function() {
 if (randomNumber < .33)
 {
       computerChoice= "rock"; 
+      $(computerChoice).css("color", "orange");
 }
 else if (randomNumber > .66)
 {
       computerChoice= "paper"; 
+       $(computerChoice).css("color", "green");
 }
 else
 {
     computerChoice= "scissors";
+     $(computerChoice).css("color", "red");
 }
   $("#computerChoice").text(computerChoice)   
 
 
+$("button").hover(function(){
+  $("button").css("background-color", "blue") 
+   $("button").css("color", "white") 
+})
