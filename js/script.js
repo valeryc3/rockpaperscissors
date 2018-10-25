@@ -10,10 +10,6 @@ var computerChoice;
 computerChoice = "";
 var winner;
 winner = "";
-var randomNumber;
-randomNumber = 0;
-
-
 var randomNumber = Math.random();
 
 
@@ -21,5 +17,19 @@ var randomNumber = Math.random();
 $("button").click(function() {
   $("#userChoice").text($("#input").val());
 });
+
+if (randomNumber < .33)
+{
+      computerChoice= "rock"; 
+}
+else if (randomNumber > .66)
+{
+      computerChoice= "paper"; 
+}
+else
+{
+    computerChoice= "scissors";
+}
+  $("#computerChoice").text(computerChoice)   
 
 
