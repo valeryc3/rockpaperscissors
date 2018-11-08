@@ -83,7 +83,6 @@ $("#shoot").click(function() {
           
              $("#result").text("Tie");    
          }
-        userChoice.clear;
         
 
 });
